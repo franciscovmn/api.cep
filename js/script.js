@@ -19,7 +19,7 @@ document.querySelector("#cep").addEventListener("blur", async function () {
         return;
     }
     
-    if (cep.length !== 8) { // Corrigido de "lenght" para "length"
+    if (cep.length !== 8) {
         errorMessage.classList.remove("hidden"); // Exibe a mensagem de erro
         cepInput.style.border = "2px solid red"; // Deixa as bordas em vermelho
         errorMessage.style.color = "red"; // Deixa o texto em vermelho
@@ -47,7 +47,6 @@ document.querySelector("#cep").addEventListener("blur", async function () {
         document.getElementById("bairro").value = data.bairro || "";
         document.getElementById("cidade").value = data.localidade || "";
         document.getElementById("estado").value = data.uf || "";
-        loadingField.classList.add('hidden')
     } catch (error) { // Caso ocorra erro na consulta
         errorMessage.textContent = "Erro ao consultar o CEP!";
         errorMessage.classList.remove("hidden"); // Exibe a mensagem de erro
