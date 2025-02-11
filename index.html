@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Address</h1>
+            <form>
+                <div class="spiner">
+                    <input type="text" id="cep" placeholder="Digite o CEP">
+                    <img src="spinner.svg" alt="loading" class="hidden" id="loading">
+                </div>
+                <div id="cepError" class="hidden">
+                    <p> CEP informado é invalido. </p>
+                </div>
+                <input type="text" id="rua" placeholder="Rua" >
+                <input type="text" id="numero" placeholder="Número">
+                <input type="text" id="bairro" placeholder="Bairro" >
+                <input type="text" id="estado" placeholder="Estado" >
+                <input type="text" id="cidade" placeholder="Cidade" >
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
