@@ -35,18 +35,6 @@ input {
     width: 100%;
 }
 
-.spiner{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-main form .spiner img#loading {
-    position: relative;
-    top: 14px;
-    display: none;
-  }
-
 .hidden {
     border: 2px solid red !important;
     background-color: #ffe5e5;

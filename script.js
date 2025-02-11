@@ -3,7 +3,7 @@ document.querySelector("#cep").addEventListener("blur", async function () {
     let cep = this.value.replace(/\D/g, ""); 
     let cepInput = document.getElementById("cep");
     let errorMessage = document.getElementById("cepError");
-    let loadingField = document.querySelector('img#loading')
+
     if (!errorMessage) return; // Garante que o elemento de erro existe
 
     // Se o campo estiver vazio, esconde a mensagem de erro e deixa o campo do cep normal
@@ -27,7 +27,6 @@ document.querySelector("#cep").addEventListener("blur", async function () {
     }
 
     try {
-        loadingField.classList.remove('hidden')
         let api = await fetch(`https://viacep.com.br/ws/${cep}/json/`); // api do cep para consulta, onde o cep do usuario vai ficar na $
         let data = await api.json(); // extrair as informações que estao em json, para ser legivel para se utilizar
 
