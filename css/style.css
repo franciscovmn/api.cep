@@ -35,23 +35,6 @@ input {
     width: 100%;
 }
 
-<<<<<<< HEAD:css/style.css
-=======
-/* Estilos ajustados para o spinner */
-.spiner {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.spiner img {
-    margin-left: 10px;
-    width: 20px;
-    height: 20px;
-}
-
-/* Oculta o spinner */
->>>>>>> ae484cb (invalida):style.css
 .hidden {
     display: none !important;
 }
